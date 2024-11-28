@@ -30,12 +30,15 @@
 
 <body>
   
-  <div id="container"  style="padding: 20px; max-width: 600px; margin: auto; font-family: inter, Sans-serif; font-size: 18px; font-weight: 500; background-image: url(https://blipmediastore.blip.ai/public-medias/Media_72d0a062-8f10-49f0-8ac1-b6000911bef5);
+  
+  <div id="container"  style="padding: 20px; max-width: 600px; margin: auto; font-family: AKZ, Sans-serif; font-size: 18px; font-weight: 500; background-image: url(https://blipmediastore.blip.ai/public-medias/Media_72d0a062-8f10-49f0-8ac1-b6000911bef5);
   background-size: cover; 
   background-color: rgba(255, 255, 255, 0.7); 
   background-blend-mode: overlay;">
-    
-    <h1 style="color: #916123;">Orçamento</h1>
+    <div style="padding: 20px; width: 100%; margin: auto; background-image: url(https://blipmediastore.blip.ai/public-medias/Media_3c3936b3-cd27-4ef0-9d92-6c318104b44e); background-repeat: no-repeat;
+    background-position: center;background-size: 200px;
+    height: 135px; border-bottom: 3px solid #B2010B;
+    margin-bottom: 17px;"></div>
     <p style="color: #858177;">Por favor, preencha o formulário e enviaremos seu orçamento em breve!</p>
     
     <form id="event-form">
@@ -75,14 +78,14 @@
         <option value="Não">Não</option>
       </select>
 
-      <label style="font-size: 16px; margin-bottom: -0.5rem" for="equipamentos">Precisa de <strong>Tela de LED, Microfone ou Equipamento Dedicado?</strong></label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="equipamentos"><strong>Precisa de Tela de LED, Microfone ou Equipamento Dedicado?</strong></label>
       <p style="font-size: 14px; margin: 0px; color: #858177;">Escolha as opções desejadas:</p>
       <select id="equipamentos" name="equipamentos" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
-      <label style="font-size: 16px; margin-bottom: -0.5rem" for="bebidas">Serviço de <strong>Bebidas Alcoólicas</strong></label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="bebidas"><strong>Serviço de Bebidas Alcoólicas</strong></label>
       <p style="font-size: 14px; margin: 0px; color: #858177;">Indique se deseja incluir bebidas alcoólicas no evento.</p>
       <select id="bebidas" name="bebidas" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
@@ -100,7 +103,7 @@
       </select>
 
       <label style="font-size: 16px; margin-bottom: -0.5rem" for="informacoes"><strong>Detalhes Adicionais sobre o Evento:</strong></label>
-      <p style="font-size: 14px; margin: 0px; color: #858177;">Informe qualquer informação extra que considere relevante.relevante.relevante.</p>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Informe qualquer informação extra que considere relevante.</p>
       <textarea id="informacoes" name="informacoes" class="form-control mb-3" rows="4" style="border-color: #8F7D57; color: #858177;" placeholder="Digite aqui..."></textarea>
 
       <button id="button" type="button" class="btn  btn-block" style="color: #fff; background-color: #8F7D57;">Enviar</button>
