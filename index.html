@@ -36,19 +36,22 @@
   background-blend-mode: overlay;">
     
     <h1 style="color: #916123;">Orçamento</h1>
-    <p style="color: #858177;">Preencha o formulário que iremos entrar em contato com você!</p>
+    <p style="color: #858177;">Por favor, preencha o formulário e enviaremos seu orçamento em breve!</p>
     
     <form id="event-form">
-      <label for="data">Data do Evento:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="data"><strong>Data do Evento:</strong></label>
       <input type="date" id="data" name="data" class="form-control mb-3" style="border-color: #8F7D57;  color: #858177;" required>
 
-      <label for="horario">Horário (Início e Término):</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="horario"><strong>Horário:</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Indique o horário de início e término desejado</p>
       <input type="text" id="horario" name="horario" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" placeholder="Ex: 14:00 - 18:00" required>
 
-      <label for="n_pessoas">N° de Pessoas:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="n_pessoas"><strong>Quantidade de Pessoas:</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Informe a quantidade de pessoas esperadas.</p>
       <input type="number" id="n_pessoas" name="n_pessoas" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" min="1" required>
 
-      <label>Alimentação:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem"><strong>Alimentação:</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Escolha o tipo de refeição desejada para o evento.</p>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" id="cafe_manha" name="alimentacao" value="Café da Manhã">
         <label class="form-check-label" for="cafe_manha">Café da Manhã</label>
@@ -66,25 +69,28 @@
         <label class="form-check-label" for="buffet">Buffet</label>
       </div>
 
-      <label for="espaco_exclusivo">Espaço Exclusivo:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="espaco_exclusivo"><strong>Necessita de espaço exclusivo para sua reserva:</strong></label>
       <select id="espaco_exclusivo" name="espaco_exclusivo" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
-      <label for="equipamentos">Tela de Led, Microfone e Equipamento Dedicado:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="equipamentos">Precisa de <strong>Tela de LED, Microfone ou Equipamento Dedicado?</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Escolha as opções desejadas:</p>
       <select id="equipamentos" name="equipamentos" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
-      <label for="bebidas">Bebidas Alcoólicas:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="bebidas">Serviço de <strong>Bebidas Alcoólicas</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Indique se deseja incluir bebidas alcoólicas no evento.</p>
       <select id="bebidas" name="bebidas" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
-      <label for="canal">Por qual canal você veio?</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="canal"><strong>Como você nos encontrou?</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Indique o canal pelo qual chegou até nós.</p>
       <select id="canal" name="canal" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Indicação">Indicação</option>
         <option value="Instagram">Instagram</option>
@@ -93,7 +99,8 @@
         <option value="Google">Google</option>
       </select>
 
-      <label for="informacoes">Informações adicionais sobre o seu evento:</label>
+      <label style="font-size: 16px; margin-bottom: -0.5rem" for="informacoes"><strong>Detalhes Adicionais sobre o Evento:</strong></label>
+      <p style="font-size: 14px; margin: 0px; color: #858177;">Informe qualquer informação extra que considere relevante.</p>
       <textarea id="informacoes" name="informacoes" class="form-control mb-3" rows="4" style="border-color: #8F7D57; color: #858177;" placeholder="Digite aqui..."></textarea>
 
       <button id="button" type="button" class="btn  btn-block" style="color: #fff; background-color: #8F7D57;">Enviar</button>
