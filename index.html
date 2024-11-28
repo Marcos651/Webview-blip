@@ -120,7 +120,15 @@
       console.log(dataObject);
 
       // Enviar os dados para o bot
-      webView.sendMessage(JSON.stringify(dataObject));
+     
+
+
+      webView.sendMessage({
+        "payload": {
+          "type": "text/plain",
+          "content": JSON.stringify(dataObject)
+        }
+      })
 
       // Finalizar webview
       webView.closeWebView();
