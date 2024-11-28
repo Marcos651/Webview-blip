@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt">
 
@@ -28,17 +29,24 @@
 </head>
 
 <body>
-  <div id="container" style="padding: 20px; max-width: 600px; margin: auto;">
-    <h1>Formulário de Evento</h1>
+  
+  <div id="container"  style="padding: 20px; max-width: 600px; margin: auto; font-family: inter, Sans-serif; font-size: 18px; font-weight: 500; background-image: url(https://blipmediastore.blip.ai/public-medias/Media_72d0a062-8f10-49f0-8ac1-b6000911bef5);
+  background-size: cover; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  background-blend-mode: overlay;">
+    
+    <h1 style="color: #916123;">Orçamento</h1>
+    <p style="color: #858177;">Preencha o formulário que iremos entrar em contato com você!</p>
+    
     <form id="event-form">
       <label for="data">Data do Evento:</label>
-      <input type="date" id="data" name="data" class="form-control mb-3" required>
+      <input type="date" id="data" name="data" class="form-control mb-3" style="border-color: #8F7D57;  color: #858177;" required>
 
       <label for="horario">Horário (Início e Término):</label>
-      <input type="text" id="horario" name="horario" class="form-control mb-3" placeholder="Ex: 14:00 - 18:00" required>
+      <input type="text" id="horario" name="horario" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" placeholder="Ex: 14:00 - 18:00" required>
 
       <label for="n_pessoas">N° de Pessoas:</label>
-      <input type="number" id="n_pessoas" name="n_pessoas" class="form-control mb-3" min="1" required>
+      <input type="number" id="n_pessoas" name="n_pessoas" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" min="1" required>
 
       <label>Alimentação:</label>
       <div class="form-check">
@@ -59,25 +67,25 @@
       </div>
 
       <label for="espaco_exclusivo">Espaço Exclusivo:</label>
-      <select id="espaco_exclusivo" name="espaco_exclusivo" class="form-control mb-3" required>
+      <select id="espaco_exclusivo" name="espaco_exclusivo" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
       <label for="equipamentos">Tela de Led, Microfone e Equipamento Dedicado:</label>
-      <select id="equipamentos" name="equipamentos" class="form-control mb-3" required>
+      <select id="equipamentos" name="equipamentos" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
       <label for="bebidas">Bebidas Alcoólicas:</label>
-      <select id="bebidas" name="bebidas" class="form-control mb-3" required>
+      <select id="bebidas" name="bebidas" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Sim">Sim</option>
         <option value="Não">Não</option>
       </select>
 
       <label for="canal">Por qual canal você veio?</label>
-      <select id="canal" name="canal" class="form-control mb-3" required>
+      <select id="canal" name="canal" class="form-control mb-3" style="border-color: #8F7D57; color: #858177;" required >
         <option value="Indicação">Indicação</option>
         <option value="Instagram">Instagram</option>
         <option value="Facebook">Facebook</option>
@@ -86,9 +94,9 @@
       </select>
 
       <label for="informacoes">Informações adicionais sobre o seu evento:</label>
-      <textarea id="informacoes" name="informacoes" class="form-control mb-3" rows="4" placeholder="Digite aqui..."></textarea>
+      <textarea id="informacoes" name="informacoes" class="form-control mb-3" rows="4" style="border-color: #8F7D57; color: #858177;" placeholder="Digite aqui..."></textarea>
 
-      <button id="button" type="button" class="btn btn-primary btn-block">Enviar</button>
+      <button id="button" type="button" class="btn  btn-block" style="color: #fff; background-color: #8F7D57;">Enviar</button>
     </form>
   </div>
 
